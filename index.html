@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>John Doe & Jane Doe Wedding</title>
+    <title>Alghifari & Khoerunnisa Wedding</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -35,7 +35,7 @@
     >
       <main>
         <h4>Kepada Bapak/Ibu/Saudara/i,</h4>
-        <h1>John Doe & Jane Doe</h1>
+        <h1>Alghifari & Khoerunnisa</h1>
         <p>Akan melangsungkan resepsi pernikahan dalam:</p>
         <div class="simply-countdown"></div>
         <a href="#undangan" class="btn btn-lg mt-4">Lihat Undangan</a>
@@ -101,7 +101,7 @@
           <div class="col-lg-6">
             <div class="row">
               <div class="col-8 text-end">
-                <h3>John Doe</h3>
+                <h3>Alghifari</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est
                   inventore, distinctio vitae numquam enim cum.
@@ -115,7 +115,7 @@
               <div class="col-4">
                 <img
                   src="img/john_doe_with_tux.jpg"
-                  alt="John Doe"
+                  alt="Alghifari"
                   class="img-responsive rounded-circle"
                 />
               </div>
@@ -127,12 +127,12 @@
               <div class="col-4">
                 <img
                   src="img/jane_doe_with_dress.jpg"
-                  alt="Jane Doe"
+                  alt="Khoerunnisa"
                   class="img-responsive rounded-circle"
                 />
               </div>
               <div class="col-8">
-                <h3>Jane Doe</h3>
+                <h3>Khoerunnisa</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est
                   inventore, distinctio vitae numquam enim cum.
@@ -235,6 +235,18 @@
           minutes: { singular: "menit", plural: "minutes" },
           seconds: { singular: "detik", plural: "seconds" },
         },
+      });
+    </script>
+    <script>
+      const stickyTop = document.querySelector(".sticky-top");
+      const offcanvas = document.querySelector('.offcanvas');
+
+      offcanvas.addEventListener('show.bs.offcanvas', function () {
+        stickyTop.style.overflow = "visible";
+      });
+
+      offcanvas.addEventListener('hidden.bs.offcanvas', function () {
+        stickyTop.style.overflow = "hidden";
       });
     </script>
   </body>
