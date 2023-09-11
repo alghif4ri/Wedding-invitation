@@ -350,14 +350,42 @@ footer a {
   text-decoration: none;
 }
 
-footer a:hover{
+footer a:hover {
   color: white;
 }
 
-footer li{
+footer li {
   list-style: none;
   display: inline;
   margin: 0.5rem;
+}
+
+.audio-icon {
+  width: 4rem;
+  height: 4rem;
+  font-size: 4rem;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  cursor: pointer;
+  color: white;
+  opacity: 0.5;
+  mix-blend-mode: difference;
+  animation: rotating 4s linear infinite;
+  transform-origin: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 /* media Query */
 /* extra large */
